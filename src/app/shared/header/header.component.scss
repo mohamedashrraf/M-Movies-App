@@ -1,0 +1,58 @@
+$coloer-primare : #FFE353 ;
+$coloer-secondary : #dabe37 ;
+$coloer-active : #7a6706 ;
+
+.navbar-collapse:not(.collapse) ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+nav{
+  background-color: $coloer-primare !important;
+  height: 3rem;
+ & div{
+  background-color: $coloer-primare !important;
+  z-index: 10;
+ }
+  @media (max-width:990px) {
+       &{
+
+    height: 3.5rem;
+
+  }
+  & div{
+    padding-bottom: .2rem ;
+   }
+
+  }
+}
+
+.logo{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wish-movie-numper{
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.7rem;
+  text-align: center;
+  color: black;
+}
+.search-text {
+  outline: 0;
+  border: .1rem solid $coloer-secondary;
+  &:focus , &:hover{
+  box-shadow: 0 0 2rem $coloer-secondary;
+}
+}
+.search-butt{
+  color: #2b250c;
+  border: 0;
+
+  transition: all .7s;
+  margin-right: 5px;
+  &:focus , &:hover{
+    background-color: $coloer-secondary;
+
+  }
+}
