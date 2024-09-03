@@ -1,4 +1,4 @@
-$coloer-primare : #FFE353 ;
+$coloer-primare : #ffc400 ;
 $coloer-secondary : #dabe37 ;
 $coloer-active : #7a6706 ;
 
@@ -40,6 +40,7 @@ nav{
 }
 .search-text {
   outline: 0;
+  border-radius: 20px;
   border: .1rem solid $coloer-secondary;
   &:focus , &:hover{
   box-shadow: 0 0 2rem $coloer-secondary;

@@ -55,17 +55,17 @@
         <input
           class="form-control me-2 search-text o"
           type="search"
-          placeholder="Search"
+          placeholder="search movie.."
           aria-label="Search"
           [(ngModel)]="searchVal"
           name="searchVal"
+          (keyup.enter)="search()"
+          
         />
-        <input
-          class="btn btn-outline-secondary search-butt"
-          type="button"
+        <fa-icon [icon]="faMagnifyingGlass" class="btn btn-outline-secondary search-butt fa-3x mt-1 "
+          
           value="Search"
-          (click)="search()"
-        />
+          (click)="search()"></fa-icon>
       </form>
     </div>
   </div>

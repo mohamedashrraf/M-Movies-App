@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 import { Router } from '@angular/router';
 import { WishListService } from '../services/wish-list.service';
 @Component({
@@ -9,7 +11,8 @@ import { WishListService } from '../services/wish-list.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
-  faHeart=faHeart
+  faHeart = faHeart
+  faMagnifyingGlass= faMagnifyingGlass
   imgSrc!:string
   navbarCollapsed:boolean=true
   wishMovieNumper:number = 0

@@ -1,33 +1,34 @@
-<div class="card position-relative">
+<div class="card position-relative" >
   <img
     [src]="imgSrc(cardItem.poster_path)"
     class="card-img-top"
     alt="Card Image"
+    (click)="redirectToDetails(cardItem.id)"
   />
 
   <div class="card-body">
-    <div class="text-content">
+    <div class="text-content" (click)="redirectToDetails(cardItem.id)">
       <h6 class="card-title fw-bold">{{ cardItem.original_title }}</h6>
       <p class="card-text text-bg-success lang">
         {{ cardItem.original_language }}
       </p>
     </div>
-    <div class="card-text star">
+    <div class="card-text star" (click)="redirectToDetails(cardItem.id)">
       <i class="fa-solid mt-2 fa-star text-warning fa-2x"></i>
       <p class="">{{ cardItem.vote_average }} /10</p>
     </div>
-    <div class="rating mb-3">
+    <div class="rating mb-3" (click)="redirectToDetails(cardItem.id)">
       <p class="card-text m-0">
         <strong>Date</strong>: {{ cardItem.release_date | date }}
       </p>
     </div>
     <div class="btns d-flex justify-content-center align-content-center">
-      <button
+      <!-- <button
         class="btn btn-outline-warning rounded-pill me-2"
         (click)="redirectToDetails(cardItem.id)"
       >
         Details
-      </button>
+      </button> -->
       <button
         class="btn btn-outline-warning rounded-pill"
         (click)="addOrRemoveFromWishList()"
